@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myappwithkotlin">
+    <uses-permission android:name="android.permission.BATTERY_STATS" tools:ignore="ProtectedPermissions" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewActivity">
+        </activity>
+        <activity android:name=".NewActivity2">
+        </activity>
+        <activity android:name=".NewActivity3">
+        </activity>
+        <activity android:name=".NewActivity4">
+        </activity>
+        <activity android:name=".BundleTest">
+        </activity>
+        <activity android:name=".ResultActivity">
+        </activity>
+        <receiver android:name=".MyReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.MYAPPKOTLIN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyReceiver2">
+            <intent-filter android:priority="0">
+                <action android:name="com.example.MYAPPKOTLIN"/>
+            </intent-filter>
+        </receiver>
+        <!--配置一个Service组件-->
+        <service android:name=".FirstService">
+        </service>
+        <service android:name=".BindService">
+        </service>
+        <service android:name=".NormalService">
+        </service>
+        <service android:name=".MyIntentService">
+        </service>
+        <service android:name=".AidlService">
+            <intent-filter>
+                <action android:name="com.example.myappwithkotlin.ALID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <!--注册一个ContentProvider-->
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.example.providers.mycontentprovider"
+            android:exported="true"/>
+        <provider android:name=".StudentsProvider"
+            android:authorities="com.example.providers.College" >
+        </provider>
+    </application>
+</manifest>

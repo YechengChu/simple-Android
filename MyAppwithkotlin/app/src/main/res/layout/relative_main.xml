@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center_horizontal">
+    <TextView
+        android:id="@+id/view22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view2_world"
+        android:layout_below="@+id/view11"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/view22"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/bn22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bn1"
+        android:layout_alignParentBottom="true"
+        android:onClick="back"/>
+
+    <Button
+        android:id="@+id/bn33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bn6"
+        android:layout_above="@id/bn22"
+        android:onClick="nextPage"/>
+
+    <Button
+        android:id="@+id/bn44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bn9"
+        android:layout_above="@id/bn33"
+        android:onClick="serStatus"/>
+
+    <Button
+        android:id="@+id/bn55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bn8"
+        android:layout_above="@id/bn44"
+        android:onClick="unBind"/>
+
+    <Button
+        android:id="@+id/bn77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bn19"
+        android:layout_above="@id/bn22"
+        android:layout_toRightOf="@id/bn88"
+        android:onClick="toDbPage"
+        android:layout_toEndOf="@id/bn33" />
+
+    <Button
+        android:id="@+id/bn88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bn21"
+        android:layout_above="@id/bn22"
+        android:layout_toRightOf="@id/bn77"
+        android:onClick="toCPPage"
+        android:layout_toEndOf="@id/bn77" />
+
+    <Button
+        android:id="@+id/bn66"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bn7"
+        android:layout_above="@id/bn55"
+        android:onClick="bind"/>
+
+    <TextView
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/view1_hello" />
+</RelativeLayout>

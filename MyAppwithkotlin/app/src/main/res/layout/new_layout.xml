@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <TextView
+            android:id="@+id/view111"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/view3"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/view222"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/view4"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/bn666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn14"/>
+
+        <TextView
+            android:id="@+id/view333"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="25dp"
+            android:text="@string/view7"
+            android:gravity="center"
+            android:scrollbars="vertical"/>
+
+        <EditText
+            android:id="@+id/editTextBox222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/view6"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/bn555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn18"
+            android:onClick="writeFile"/>
+
+        <Button
+            android:id="@+id/bn444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn17"
+            android:onClick="readFile"/>
+
+        <EditText
+            android:id="@+id/editTextBox111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/view5"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/bn333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn15"
+            android:onClick="writePre"/>
+
+        <Button
+            android:id="@+id/bn222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn16"
+            android:onClick="readPre"/>
+
+        <Button
+            android:id="@+id/bn777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn11"
+            android:onClick="intentService"/>
+
+        <Button
+            android:id="@+id/bn111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bn1"
+            android:onClick="back"/>
+    </LinearLayout>
+
+</LinearLayout>
